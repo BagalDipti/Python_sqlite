@@ -1,6 +1,6 @@
 pipeline {
   environment {
-        registry = "localhost:5555"
+        registry = "diptibagal3010"
         dockerImage = ''
         Name = "my_image"
   }
@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'http://gsgit.gslab.com/dipti_bagal/Jenkins.git'
+        git 'https://github.com/BagalDipti/Python_sqlite.git'
       }
     }
     stage('Building image') {
